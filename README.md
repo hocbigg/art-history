@@ -7,11 +7,17 @@ description: Path to a free self-taught education in Art History
 
 Art history is the study of how images, objects, and buildings carry meaning: who made them, for whom, and what they did in the societies that produced them. Studying it builds two things at once, a body of knowledge about the world's art traditions and a trainable skill in looking closely and interpreting what you see. The second half is why the discipline is worth studying even if you never intend to work in a museum; the habits of deliberate looking carry over to film, photography, advertising, and the visual environment generally.
 
-This curriculum assumes no background. You do not need to draw, to have studied history, or to read any language besides English; the only requirements are attention and a willingness to write about what you see. It is also not a course in making art, so if your goal is drawing or painting, that belongs to a separate practice-based path. Everything here was chosen for independent study, with no dependence on classroom or institutional access. Most of it is free: Smarthistory's open-access textbook, a full MIT OpenCourseWare course, and free editions of classic books such as Gombrich's The Story of Art and Berger's Ways of Seeing. The paid items are a writing guide, one survey textbook, and the three short methods books, kept because no free alternative matches their quality.
+This curriculum assumes no background. You do not need to draw, to have studied history, or to read any language besides English; the only requirements are attention and a willingness to write about what you see. It is also not a course in making art, so if your goal is drawing or painting, that belongs to a separate practice-based path. Everything here was chosen for independent study, with no dependence on classroom or institutional access.
 
 ### Working Through the Curriculum
 
-The three subjects are sequenced, and the first one genuinely comes first. Visual Analysis & How to Look at Art teaches the discipline's basic skill: describing and interpreting what is actually in front of you. Without it, the historical material that follows has nothing to attach to. The Global Survey of Art History: Prehistory to Present is the backbone and by far the largest commitment, designed as roughly a semester of study. Its scope is deliberately worldwide, from prehistoric art to global contemporary practice, with Europe treated as one tradition among many rather than the whole story. Art Historical Methods & Historiography works best last, since its debates (formalism, iconography, feminism, postcolonialism, and others) are argued through specific artworks and movements that make fuller sense once you have met the art.
+The three subjects are sequenced, and the first one genuinely comes first. 
+
+Visual Analysis & How to Look at Art teaches the discipline's basic skill: describing and interpreting what is actually in front of you. Without it, the historical material that follows has nothing to attach to. 
+
+The Global Survey of Art History: Prehistory to Present is the backbone and by far the largest commitment, designed as roughly a semester of study. Its scope is deliberately worldwide, from prehistoric art to global contemporary practice, with Europe treated as one tradition among many rather than the whole story.
+
+Art Historical Methods & Historiography works best last, since its debates (formalism, iconography, feminism, postcolonialism, and others) are argued through specific artworks and movements that make fuller sense once you have met the art.
 
 Within each subject, do not try to consume everything listed. Pick one spine and treat the rest as supplements: Reframing Art History or the MIT course both work as a survey spine (choose the MIT course if you want a structured semester with assignments), while Gombrich makes a readable narrative companion. In the final subject, the three books are the substance, as no adequate free course or textbook exists for that material.
 
@@ -19,7 +25,7 @@ Two practical notes. First, expect to write, not just read and watch; writing ab
 
 ### After the Core
 
-These three subjects are the foundation, not the whole field: they cover what virtually everyone in art history needs before specializing. Once you have worked through them, [Advanced Topics](advanced_topics.md) branches into specialization tracks, including period and regional deep dives, critical theory, museum and curatorial studies, and conservation. [Projects](projects.md) gathers step-by-step guides for producing things yourself, from a formal analysis essay to a small digital exhibition or a piece of provenance research. For deeper literature and extended video and audio material, see [Readings](extras/readings.md) and [Courses](extras/courses.md).
+These three subjects are the foundation, not the whole field: they cover what virtually everyone in art history needs before specializing. Once you have worked through them, [Advanced Topics](advanced_topics.md) branches into specialization tracks, including period and regional deep dives, critical theory, museum and curatorial studies, and conservation. [Projects](projects.md) gathers step-by-step guides for producing things yourself, from a formal analysis essay to a small digital exhibition or a piece of provenance research.
 
 ## Curriculum
 
