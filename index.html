@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Hocbigg - Art History</title>
+  <meta name="description" content="Path to a free self-taught education in Art History">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/art-history/">
+  <meta property="og:title" content="Hocbigg - Art History">
+  <meta property="og:description" content="Path to a free self-taught education in Art History">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/art-history/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/art-history/">Art History</a></li>
+      <li><a href="/art-history/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/art-history/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/art-history" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+<header class="page-header">
+  <img src="/images/logo.png" alt="Hocbigg logo">
+  <h1>Hocbigg - Art History</h1>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-16">2026-09-16</time></small></p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>Art history is the study of how images, objects, and buildings carry meaning: who made them, for whom, and what they did in the societies that produced them. Studying it builds two things at once, a body of knowledge about the world's art traditions and a trainable skill in looking closely and interpreting what you see. The second half is why the discipline is worth studying even if you never intend to work in a museum; the habits of deliberate looking carry over to film, photography, advertising, and the visual environment generally.</p>
+<p>This curriculum assumes no background. You do not need to draw, to have studied history, or to read any language besides English; the only requirements are attention and a willingness to write about what you see. It is also not a course in making art, so if your goal is drawing or painting, that belongs to a separate practice-based path. Everything here was chosen for independent study, with no dependence on classroom or institutional access. Most of it is free: Smarthistory's open-access textbook, a full MIT OpenCourseWare course, and free editions of classic books such as Gombrich's The Story of Art and Berger's Ways of Seeing. The paid items are a writing guide, one survey textbook, and the three short methods books, kept because no free alternative matches their quality.</p>
+<h3 id="working-through-the-curriculum">Working Through the Curriculum</h3>
+<p>The three subjects are sequenced, and the first one genuinely comes first. Visual Analysis &amp; How to Look at Art teaches the discipline's basic skill: describing and interpreting what is actually in front of you. Without it, the historical material that follows has nothing to attach to. The Global Survey of Art History: Prehistory to Present is the backbone and by far the largest commitment, designed as roughly a semester of study. Its scope is deliberately worldwide, from prehistoric art to global contemporary practice, with Europe treated as one tradition among many rather than the whole story. Art Historical Methods &amp; Historiography works best last, since its debates (formalism, iconography, feminism, postcolonialism, and others) are argued through specific artworks and movements that make fuller sense once you have met the art.</p>
+<p>Within each subject, do not try to consume everything listed. Pick one spine and treat the rest as supplements: Reframing Art History or the MIT course both work as a survey spine (choose the MIT course if you want a structured semester with assignments), while Gombrich makes a readable narrative companion. In the final subject, the three books are the substance, as no adequate free course or textbook exists for that material.</p>
+<p>Two practical notes. First, expect to write, not just read and watch; writing about art is how the discipline thinks, which is why a guide to writing about art appears in the very first subject. Second, where you can, look at real objects. Art history is unusual in that many of its primary sources are free to visit in museums and galleries, and scale, surface, and color rarely survive reproduction. Realistically, the full core is several months of part-time study, with the survey accounting for most of that time.</p>
+<h3 id="after-the-core">After the Core</h3>
+<p>These three subjects are the foundation, not the whole field: they cover what virtually everyone in art history needs before specializing. Once you have worked through them, <a href="advanced_topics.html">Advanced Topics</a> branches into specialization tracks, including period and regional deep dives, critical theory, museum and curatorial studies, and conservation. <a href="projects.html">Projects</a> gathers step-by-step guides for producing things yourself, from a formal analysis essay to a small digital exhibition or a piece of provenance research. For deeper literature and extended video and audio material, see <a href="extras/readings.html">Readings</a> and <a href="extras/courses.html">Courses</a>.</p>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="visual-analysis-how-to-look-at-art">Visual Analysis &amp; How to Look at Art</h3>
+<p>The foundational skill of describing, analyzing, and interpreting artworks based on careful observation of their formal properties, materials, subject matter, and cultural context.</p>
+<p><a href="https://smarthistory.org/curated-guide/the-basics-of-art-history" target="_blank" rel="noopener noreferrer">Smarthistory: The Basics of Art History</a> - Free introductory guide covering how to describe what you see, why art history matters, and core terminology.</p>
+<p><a href="https://smarthistory.org/introduction-to-art-historical-analysis" target="_blank" rel="noopener noreferrer">Understanding Art: An Introduction (Smarthistory)</a> - Free structured introduction to the three main categories of art historical analysis: materials and techniques, visual/formal analysis, and contextual analysis.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLFBD5CAC76F99471E" target="_blank" rel="noopener noreferrer">Ways of Seeing - Complete BBC Series (John Berger)</a> - Four-part 1972 BBC series that challenges conventional ways of looking at art, examining how reproduction, advertising, and social assumptions shape our perception.</p>
+<p><a href="https://monoskop.org/images/9/9e/Berger_John_Ways_of_Seeing.pdf" target="_blank" rel="noopener noreferrer">Ways of Seeing by John Berger (Monoskop)</a> - The companion book to the BBC series, freely available as a PDF; a foundational text for critical visual literacy.</p>
+<p><a href="https://books.google.com/books?isbn=9780205886999" target="_blank" rel="noopener noreferrer">A Short Guide to Writing About Art by Sylvan Barnet</a> - The standard textbook for writing about art, covering formal analysis, comparison, and argumentation; the most practical guide for turning visual observation into clear prose.</p>
+<h3 id="global-survey-of-art-history-prehistory-to-present">Global Survey of Art History: Prehistory to Present</h3>
+<p>A chronological and geographical survey of the world's major art traditions, from prehistoric cave painting through ancient civilizations, medieval and Renaissance Europe, Asia, Africa, the Islamic world, the Americas, and global contemporary art.</p>
+<p><a href="https://smarthistory.org/reframing-art-history" target="_blank" rel="noopener noreferrer">Reframing Art History (Smarthistory)</a> - A free, open-access multimedia art history textbook offering a global, guided journey through art from every continent and time period, written by hundreds of leading scholars.</p>
+<p><a href="https://smarthistory.org/curated-guide/world-art-history-syllabus" target="_blank" rel="noopener noreferrer">World Art History Syllabus (Smarthistory)</a> - A free, structured one-semester course syllabus looking at art across time and continents, with a focus on works that tell stories of cultural exchange and globalization.</p>
+<p><a href="https://archive.org/details/storyofart00gombrich" target="_blank" rel="noopener noreferrer">The Story of Art by E.H. Gombrich (Internet Archive)</a> - The most widely read art history book ever written, covering prehistory to the 20th century in an accessible narrative; the 1951 edition is freely available.</p>
+<p><a href="https://ocw.mit.edu/courses/4-601-introduction-to-art-history-fall-2018" target="_blank" rel="noopener noreferrer">Introduction to Art History 4.601 (MIT OpenCourseWare)</a> - A free undergraduate course investigating the power of art in historical perspective, focusing on Euro-American traditions from the 14th to 21st century, with full syllabus, readings, and assignments.</p>
+<p><a href="https://books.google.com/books?isbn=9781285754994" target="_blank" rel="noopener noreferrer">Gardner's Art Through the Ages: A Global History by Fred S. Kleiner</a> - The most widely used art history survey textbook in American universities, providing comprehensive global coverage with excellent illustrations; the current standard reference.</p>
+<h3 id="art-historical-methods-historiography">Art Historical Methods &amp; Historiography</h3>
+<p>The major interpretive approaches used in art history — formalism, iconography and iconology, Marxism, feminism, psychoanalysis, structuralism, postcolonialism, race and gender studies — and the history of the discipline itself.</p>
+<p><a href="https://books.google.com/books?isbn=9780719069598" target="_blank" rel="noopener noreferrer">Art History: A Critical Introduction to Its Methods by Michael Hatt and Charlotte Klonk</a> - A lively and lucid account of methodological debates from Hegel to post-colonialism, explaining the philosophical and political assumptions behind each approach with clear examples.</p>
+<p><a href="https://books.google.com/books?isbn=9780813344508" target="_blank" rel="noopener noreferrer">The Methodologies of Art: An Introduction by Laurie Schneider Adams</a> - A comprehensive survey of major methodologies including formal analysis, iconology, Marxism, feminism, biography, psychoanalysis, and structuralism, with new sections on race, gender, orientalism, and colonialism.</p>
+<p><a href="https://books.google.com/books?isbn=9781856694179" target="_blank" rel="noopener noreferrer">Methods &amp; Theories of Art History by Anne D'Alleva</a> - An accessible introduction to the range of theoretical perspectives used in analyzing art, presenting individual arguments and controversies with clear explanations of how each method is applied.</p>
+    </article>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Art History: Advanced Topics</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/art-history/advanced_topics.html">
+  <meta property="og:title" content="Art History: Advanced Topics">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/art-history/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/art-history/">Art History</a></li>
+      <li><a href="/art-history/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/art-history/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/art-history" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="art-history-advanced-topics">Art History: Advanced Topics</h1>
+<h2 id="period-regional-specializations">Period &amp; Regional Specializations</h2>
+<p>Deep dives into specific historical periods and cultural/geographic regions, building on the global survey from the core curriculum with focused scholarly depth.</p>
+<p>Renaissance &amp; Baroque European Art: <a href="https://www.edx.org/learn/art/universidad-carlos-iii-de-madrid-european-paintings-from-leonardo-to-rembrandt-to-goya" target="_blank" rel="noopener noreferrer">European Paintings: From Leonardo to Rembrandt to Goya (Universidad Carlos III de Madrid / edX)</a> - A free structured course covering leading European painters from 1400 to 1800, including Leonardo, Caravaggio, Velázquez, Rembrandt, Vermeer, and Goya.</p>
+<p>Renaissance &amp; Baroque European Art: <a href="https://www.youtube.com/playlist?list=PL1vtGId5rAwVa78JXVhPyMevA5XVtwI1P" target="_blank" rel="noopener noreferrer">European Paintings Video Lectures (UC3M / YouTube)</a> - The complete 41-video lecture series from the edX course, freely available for those who prefer direct video access.</p>
+<p>Modern Art (1880-1960): <a href="https://www.coursera.org/learn/modern-art-ideas" target="_blank" rel="noopener noreferrer">Modern Art &amp; Ideas (The Museum of Modern Art / Coursera)</a> - A free MoMA course designed for lifelong learners, examining modern art through four themes: Places, Identity, Society, and Transforming Everyday Objects.</p>
+<p>Contemporary Art: <a href="https://www.coursera.org/learn/contemporary-art" target="_blank" rel="noopener noreferrer">What Is Contemporary Art? (The Museum of Modern Art / Coursera)</a> - A free course surveying art from the past three decades through the eyes of artists, curators, and MoMA educators, covering 70+ artworks from around the world.</p>
+<p>Asian Art Traditions: <a href="https://www.khanacademy.org/humanities/art-asia" target="_blank" rel="noopener noreferrer">Art of Asia (Khan Academy / Smarthistory)</a> - A free comprehensive survey of Asian art organized by region and period, covering South Asia, East Asia, Southeast Asia, and the Himalayas with scholarly essays and videos.</p>
+<p>Asian Art Traditions: <a href="https://smarthistory.org/place/asia" target="_blank" rel="noopener noreferrer">Smarthistory: Asia</a> - Free scholarly essays and videos covering the art of Asia from the Indus Valley to contemporary practice, organized by region and theme.</p>
+<p>Islamic Art &amp; Architecture: <a href="https://learn.agakhanmuseum.org/courses/islamic-art-101" target="_blank" rel="noopener noreferrer">Islamic Art 101 (Aga Khan Museum)</a> - A free introductory course covering the major themes and media of Islamic art, including calligraphy, manuscript painting, ceramics, and architecture.</p>
+<h2 id="critical-theory-advanced-methodologies">Critical Theory &amp; Advanced Methodologies</h2>
+<p>Theoretical frameworks that shape contemporary art historical scholarship, including postcolonial, feminist, and visual culture approaches that go beyond the core methods curriculum.</p>
+<p>Postcolonial Approaches: <a href="https://monoskop.org/images/4/4e/Said_Edward_Orientalism_1979.pdf" target="_blank" rel="noopener noreferrer">Orientalism by Edward W. Said (Monoskop)</a> - The foundational text of postcolonial theory that transformed how art historians approach the representation of the "East" in Western art; freely available as a PDF.</p>
+<p>Feminist Art History: <a href="https://archive.org/details/visiondifference0000poll_c8k5" target="_blank" rel="noopener noreferrer">Vision and Difference: Femininity, Feminism and the Histories of Art by Griselda Pollock (Internet Archive)</a> - A landmark work that introduced feminist cultural theory into art history, offering concrete historical analyses of the sexual politics at the heart of modernist art.</p>
+<p>Visual Culture Studies: <a href="https://ocw.mit.edu/courses/21h-991-theories-and-methods-in-the-study-of-history-fall-2014" target="_blank" rel="noopener noreferrer">Theories and Methods: Visual Culture Module (MIT OpenCourseWare)</a> - Free course materials from MIT covering visual culture theory, including readings by Nicholas Mirzoeff, W.J.T. Mitchell, and others who defined the field.</p>
+<p>Modernism and Postmodernism: <a href="https://books.google.com/books?isbn=9780500238189" target="_blank" rel="noopener noreferrer">Art Since 1900: Modernism, Antimodernism, Postmodernism by Hal Foster, Rosalind Krauss, Yve-Alain Bois, and Benjamin Buchloh</a> - The most comprehensive academic textbook on 20th-century art, structured around four methodological essays (psychoanalysis, social history of art, formalism, and poststructuralism) and detailed analyses of 100+ key works.</p>
+<h2 id="museum-curatorial-studies">Museum &amp; Curatorial Studies</h2>
+<p>The theory and practice of museums as institutions, including curatorial methods, collections management, and the ethical frameworks governing the display and stewardship of cultural objects.</p>
+<p>Museum Theory &amp; the Public Sphere: <a href="https://archive.org/details/civilizingritual0000dunc" target="_blank" rel="noopener noreferrer">Civilizing Rituals: Inside Public Art Museums by Carol Duncan (Internet Archive)</a> - A foundational text in museum studies that analyzes art museums as ritual sites, examining how museum spaces communicate social values and construct civic identity.</p>
+<p>Collections &amp; Curation Practice: <a href="https://www.edx.org/learn/art-history/harvard-university-tangible-things-discovering-history-through-artworks-artifacts-scientific-specimens-and-the-stuff-around-you" target="_blank" rel="noopener noreferrer">Tangible Things: Discovering History Through Artworks, Artifacts, Scientific Specimens, and the Stuff Around You (HarvardX / edX)</a> - A free Harvard course that teaches museum-style object analysis using Harvard's collections, covering how to organize, interpret, and display material culture.</p>
+<p>Art and Visual Culture: <a href="https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern/content-section-0" target="_blank" rel="noopener noreferrer">Art and Visual Culture: Medieval to Modern (The Open University / OpenLearn)</a> - A free Open University course examining changing perceptions of art across history, the relationship between art and visual culture, and the impact of globalization.</p>
+<p>Museum Ethics: <a href="https://icom.museum/en/resources/standards-guidelines/code-of-ethics/" target="_blank" rel="noopener noreferrer">ICOM Code of Ethics for Museums (International Council of Museums)</a> - The international standard for museum ethics, covering acquisition, display, repatriation, and professional conduct; essential reference for understanding contemporary museum practice.</p>
+<h2 id="conservation-technical-art-history">Conservation &amp; Technical Art History</h2>
+<p>The scientific and material study of art objects — how they were made, how they deteriorate, and how they are preserved — bridging art history with materials science and chemistry.</p>
+<p>Introduction to Conservation: <a href="https://www.khanacademy.org/humanities/special-topics-art-history/creating-conserving" target="_blank" rel="noopener noreferrer">Creating &amp; Conserving (Khan Academy / Smarthistory)</a> - A free course covering how artworks were made, the science of their materials, and what museum conservators do, with videos on techniques from Greek ceramics to modern oil painting.</p>
+<p>Conservation &amp; Restoration: <a href="https://smarthistory.org/technique/conservation-and-restoration" target="_blank" rel="noopener noreferrer">Smarthistory: Conservation and Restoration</a> - Free scholarly essays and videos explaining conservation practice, restoration ethics, and behind-the-scenes looks at conservation labs in major museums.</p>
+<p>Technical Studies in Conservation: <a href="https://www.kressconservation.org" target="_blank" rel="noopener noreferrer">Kress Program in Painting Conservation (Conservation Center, Institute of Fine Arts, NYU)</a> - A free archive of conservation reports, technical studies, and treatment documentation for over 220 Old Master paintings, offering real-world case studies in technical art history.</p>
+<p>Museum Conservation Research: <a href="https://mci.si.edu" target="_blank" rel="noopener noreferrer">Museum Conservation Institute (Smithsonian Institution)</a> - Free technical resources, research reports, and guidelines from the Smithsonian's center for collections research and conservation, covering scientific analysis methods and preservation standards.</p>
+    </article>
+  </main>
+
+</body>
+</html>
